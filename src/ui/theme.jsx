@@ -1,10 +1,31 @@
-import { blue } from "@material-ui/core/colors";
-import { createMuiTheme } from "@material-ui/core/styles";
+import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 
 const Blue = "#0B72B9";
 const Orange = "#FFBA60";
 const Gray = "#868686";
 const theme = createMuiTheme({
+    overrides: {
+        MuiFormControlLabel: {
+            label: {
+                color: Blue,
+                fontWeight: 700,
+            },
+            labelPlacementStart: {
+                marginLeft: 0,
+            },
+        },
+        MuiInputLabel: {
+            root: {
+                color: Blue,
+                fontSize: "1rem",
+            },
+        },
+        MuiInput: {
+            root: {
+                color: Blue,
+            },
+        },
+    },
     palette: {
         common: {
             blue: Blue,
@@ -65,6 +86,10 @@ const theme = createMuiTheme({
             borderRadius: 50,
             fontFamily: "Roboto",
             fontWeight: "bold",
+        },
+        formLabel: {
+            color: Blue,
+            fontWeight: 700,
         },
     },
 });
