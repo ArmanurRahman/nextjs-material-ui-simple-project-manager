@@ -25,6 +25,26 @@ const theme = createMuiTheme({
                 color: Blue,
             },
         },
+        MuiTableCell: {
+            head: {
+                fontSize: "1rem",
+                color: Blue,
+                borderColor: Blue,
+                borderWidth: 2,
+            },
+            body: {
+                color: Gray,
+                borderColor: Blue,
+                borderWidth: 2,
+            },
+        },
+        MuiSvgIcon: {
+            root: {
+                "&.MuiSelect-icon": {
+                    fill: Orange,
+                },
+            },
+        },
     },
     palette: {
         common: {
